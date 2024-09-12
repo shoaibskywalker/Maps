@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.maps.fragments.MapFragment"
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/action_mapFragment_to_secondragment"
+            app:destination="@id/secondragment"
+            app:popUpTo="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondragment"
+        android:name="com.example.maps.fragments.Secondragment"
+        android:label="fragment_secondragment"
+        tools:layout="@layout/fragment_secondragment" />
+</navigation>
